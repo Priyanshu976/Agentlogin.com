@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUDCO Agent Reporting</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style1.css')}}">   
+</head>
+
+<body>
+    <header>
+
+        <div class="container-header-container" role="region" aria-label="header container" style="padding: 20px;">
+            
+            <a href="{{url_for('home')}}" title="Home" rel="home" class="header__logo" id="logo" style="padding-right: 450px;" >
+                <img  src="{{url_for("static",filename="images/hudcologo.png")}}" alt="hudcologo.icon">
+            </a>	
+            <a class="sw-logo" title="Swachh Bharat, External Link that opens in a new window" href="https://swachhbharatmission.ddws.gov.in/" target="_blank" aria-label="Swachh Bharat">
+                <img src="https://dopt.gov.in/sites/all/modules/customs/cmf_content/assets/images/swach-bharat.png" alt="Swachh Bharat">
+            </a>
+            <a title="Mahatma Gandhi 150th birth anniversary, External Link that opens in a new window" href="http://amritmahotsav.nic.in" target="_blank" aria-label="Mahatma Gandhi">
+                <img src="https://dopt.gov.in/sites/all/modules/customs/cmf_content/assets/images/AKAM_logo.jpg" alt="Mahatma Gandhi">
+            </a>
+            <a title="International Year of Cooperatives" href="#" target="_blank" aria-label="International Year of Cooperatives">
+                <img src="https://dopt.gov.in/sites/all/modules/customs/cmf_content/assets/images/IYC-Logo.png" alt="International Year of Cooperatives">
+            </a>
+        </div>
+        
+        <div id="navbar">
+            <a id="head-logo" class="top-head" href="{{url_for('home')}}">Home</a>
+            <a class="top-head" href="https://www.hudco.org.in"> Go To Main Site</a>
+            <a class="top-head" href="{{url_for('about')}}">About Us</a>
+            <a class="top-head" href="{{url_for('contact')}}">Contact Us</a>
+            <input placeholder="Search Here">
+            <a href="{{url_for('signin')}}"><button>Sign In!</button></a>
+        </div>
+        <br>
+        <hr>
+
+        <div id="mid-header">  
+            <div class="top-nav" style="text-align: center;" >
+                <span class="funding" style="color: crimson;">Financing, Consultancy and Capacity Building</span><br>
+                <span style="margin-top:4.5%;">विकसित भारत के लिए संपदा निर्माण में कार्यरत</span><br>
+                <span >BUILDING ASSETS FOR VIKSIT BHARAT</span>
+            </div>  
+        </div>
+        <hr>
+    </header>
+
+
+    <main>
+        <div id="contpic">
+            <img id="conticon" src="{{url_for('static', filename='images/contactus.jpg')}}" alt="contact us icon">
+        </div>
+        <hr>
+        <div id="container">
+            <div class="box">
+                <i class="fa" style="font-size:24px;">&#xf095;</i>
+                <b>Give Us A Call</b>
+                <p>011-24649610-21,<br>24648160-63,<br>24648420,<br>24648193-95</p>
+            </div>
+            <div class="box">
+                <i class="fas" aria-hidden="true">&#xf1ad;</i>
+                <b>Visit Us</b>
+                <p>HUDCO Bhawan,<br><a href="../../writereaddata/isocertificate.pdf" target="_blank">(ISO 9001: 2015 CERTIFIED)</a><br>Core-7-A,<br>India Habitat Centre,<br>Lodhi Road,<br>New Delhi - 110 003</p>
+            </div>
+            <div class="box">
+                <i class="fas" aria-hidden="true">&#xf0e0;</i>
+                <b>Mail Us At</b>
+                <p>bondshudco[at]hudco[dot]org<br>hrhudco[at]hudco[dot]org<br>csr[at]hudco[dot]org<br>investor[at]hudco[dot]org<br>grievance[at]hudco[dot]org<br>cswhudco[at]hudco[dot]org</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <b>Timings:</b>
+            <p>Monday to Friday - 09:30 hrs to 18:00 hrs<br>(Closed on Public Holidays)</p>
+        </div>
+    </main>
+    
+
+
+
+    <footer>
+        <p style="font-size: large;">Housing and Urban Development Corporation Limited</p>
+        <p> (A Navratna Central Public Sector Enterprise)</p>
+        <p>HUDCO Bhawan, Core-7-A, India Habitat Centre, Lodhi Road, New Delhi - 110 003</p>
+        <p>Corporate Identity Number: L74899DL1970GOI005276</p>
+    </footer>
+
+</body>
+</html>

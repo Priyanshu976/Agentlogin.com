@@ -1,0 +1,260 @@
+/* this if for top header(navigation bar) part */
+*{padding: 0;margin: 0;}
+/* #navbar{background-color: #bc7432;height: 60px;padding: 5px;} */
+a{
+    text-decoration: none;   
+}
+
+/* Navbar container */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:  #bc7432;
+    padding: 10px 20px;
+}
+
+/* Navigation links */
+#navbar .top-head {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 20px;
+}
+
+/* Hover effect for links */
+#navbar .top-head:hover {
+    background-color: #575757;
+    color:rgb(0, 0, 0);
+}
+
+/* Search input styling */
+#navbar input[type="text"] {
+    padding: 5px;
+    border: 1px;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+/* Sign In button styling */
+#navbar button {
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for button */
+#navbar button:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+}
+
+
+#head-logo{font-size: 35px;}
+
+
+
+/* this is for second header */
+#logo-pic{height: 100px;}
+#hudcologo{height: 30px;}
+.top-nav{background-color: white;color: rgb(0, 2, 128);font-size: larger;}
+
+/* this is for central/middle content */
+#chairman{
+    height: auto;
+    max-width:100%;
+    vertical-align:middle;
+    border:0;
+}
+#bigpic{padding-left: 30px;}
+#whatwedo{padding: 80px;}
+
+
+
+/* this is for footer part */
+footer{height: 100px;background-color: black;color: white;text-align: center;padding-top: 10px;}
+
+/* this is for the contactus part */
+#conticon{   
+    height: auto;
+    max-width:100%;
+    vertical-align:middle;
+    border:0;
+}
+
+
+#container{
+    width: 100%;
+}
+/* Main container styling */
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width:1300px;
+}
+
+/* Individual box styling */
+#container .box {
+    flex: 1 1 300px;
+    max-width: 300px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#container .box:hover {
+    transform: translateY(-5px);
+}
+
+/* Icon styling */
+#container .box i {
+    font-size: 35px;
+    color: #9b111e;
+    margin-bottom: 10px;
+}
+
+/* Heading styling */
+#container .box b {
+    display: block;
+    color: #000;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Paragraph text styling */
+#container .box p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Link styling */
+#container .box a {
+    color: blue;
+    text-decoration: none;
+}
+
+#container .box a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* this is for the about-us part */
+#abusicon{
+    height: auto;
+    max-width:100%;
+    vertical-align:middle;
+    border:0;
+}
+#abustext{padding: 40px;}
+
+/* this is for signin page part */
+.signin-container {
+    background: #fff;
+    padding: 20px;
+    margin-left: 500px;
+    border-radius: 8px;
+    box-shadow:inset 0 -3em 3em rgb(0 200 0 / 30%),
+    0 0 0 2px white,
+    0.3em 0.3em 1em rgb(200 0 0 / 60%);
+    width: 300px;
+}
+.signin-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+.flash-message {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.flash-success {
+    color: green;
+    border-color: green;
+    background-color: #e6ffee;
+}
+.flash-error {
+    color: red;
+    border-color: red;
+    background-color: #ffe6e6;
+}
+
+/* dashboard user info */
+
+/* Container styling */
+.userinfo {
+    padding: 40px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+/* Heading styling */
+.userinfo h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+/* Paragraph styling */
+.userinfo p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+/* Strong tag styling */
+.userinfo p strong {
+    font-weight: bold;
+    color: #2c3e50;
+}

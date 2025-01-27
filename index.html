@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUDCO Agent Reporting</title>
+    <link rel="stylesheet" href="css/style1.css">   
+</head>
+
+<body>
+    <header>
+
+        <div class="container-header-container" role="region" aria-label="header container" style="padding: 20px;">
+            
+            <a href="index.html" title="Home" rel="home" class="header__logo" id="logo" style="padding-right: 450px;" >
+                <img  src="images/hudcologo.png" alt="hudcologo.icon">
+            </a>	
+            <a title="Swachh Bharat, External Link that opens in a new window" href="https://swachhbharatmission.ddws.gov.in/" >
+                <img src="https://dopt.gov.in/sites/all/modules/customs/cmf_content/assets/images/swach-bharat.png" alt="Swachh Bharat">
+            </a>
+            <a title="Mahatma Gandhi 150th birth anniversary, External Link that opens in a new window" href="http://amritmahotsav.nic.in">
+                <img src="https://dopt.gov.in/sites/all/modules/customs/cmf_content/assets/images/AKAM_logo.jpg" alt="Mahatma Gandhi">
+            </a>
+            <a title="International Year of Cooperatives" href="#" >
+                <img src="https://dopt.gov.in/sites/all/modules/customs/cmf_content/assets/images/IYC-Logo.png" alt="International Year of Cooperatives">
+            </a>
+        </div>
+        
+        <div id="navbar">
+            <a id="head-logo" class="top-head" href="index.html">Home</a>
+            <a class="top-head" href="https://www.hudco.org.in"> Go To Main Site</a>
+            <a class="top-head" href="{{url_for('about')}}">About Us</a>
+            <a class="top-head" href="{{url_for('contact')}}">Contact Us</a>
+            <input placeholder="Search Here">
+            <a href="{{url_for('signin')}}"><button>Sign In!</button></a>
+        </div>
+        <br>
+        <hr>
+
+        <div id="mid-header">  
+            <div class="top-nav" style="text-align: center;" >
+                <span class="funding" style="color: crimson;">Financing, Consultancy and Capacity Building</span><br>
+                <span style="margin-top:4.5%;">विकसित भारत के लिए संपदा निर्माण में कार्यरत</span><br>
+                <span >BUILDING ASSETS FOR VIKSIT BHARAT</span>
+            </div>  
+        </div>
+        <hr>
+    </header>
+
+
+
+    <main>
+        <div id="bigpic"><img id="chairman" src="{{url_for("static",filename="images/vis-mis.jpg")}}" alt="x.icon"></div>
+        <br>
+        <br>
+        <div id="whatwedo">
+            <h1>What We DO...</h1>
+            <br>
+            <p style="font-size: 20px;">The Housing and Urban Development Corporation Limited (HUDCO), a Navratna CPSE under the Ministry of Housing and Urban Affairs (MoHUA), has been instrumental in shaping India’s socio-economic landscape since its establishment in 1970. Operating with the motto “Profitability with Social Justice,” HUDCO combines financial viability with a commitment to social equity, addressing the housing needs of underserved sections, particularly the Economically Weaker Sections (EWS) and Low-Income Groups (LIG). With its designation as a Non-Banking Financial Company – Infrastructure Finance Company (NBFC-IFC) by the Reserve Bank of India, HUDCO will continue to play a crucial role in sustainable asset creation, contributing to the vision of a ‘Viksit Bharat’.</p>
+            <br>
+            <p style="font-size: 20px;">With an authorized capital of Rs. 2,500 crore, HUDCO currently has a paid-up equity of Rs. 2,001.90 crore. The registered and corporate office of the company is located in New Delhi with 21 regional offices and 11 development offices across India. It has a dedicated training and research arm, the Human Settlement Management Institute (HSMI), also in New Delhi.</p>
+            <br>
+            <br>
+            <h1>What's this site for... </h1>
+            <br>
+            <p style="font-size: 20px;">This website serves as a centralized platform for agents to securely access their data and efficiently manage reporting. Agents can log in using their unique credentials to submit detailed reports about any issues they encounter, ensuring transparency and streamlined communication. The system allows them to describe the problem in detail and upload supporting documents, enabling a structured and organized approach to problem resolution.</p>
+
+        </div>
+
+
+    </main>
+
+
+
+
+    <footer>
+        <p style="font-size: large;">Housing and Urban Development Corporation Limited</p>
+        <p> (A Navratna Central Public Sector Enterprise)</p>
+        <p>HUDCO Bhawan, Core-7-A, India Habitat Centre, Lodhi Road, New Delhi - 110 003</p>
+        <p>Corporate Identity Number: L74899DL1970GOI005276</p>
+    </footer>
+
+</body>
+</html>
